@@ -54,6 +54,7 @@ public class AppiumTest {
 //		capabilities.setCapability("appActivity", ""); //Activity to start Android App
 		capabilities.setCapability("noReset", true); //Set this to not remove the app after test
 //		capabilities.setCapability("startIWDP", true); //iOS WebDebug Proxy for Hybrid Applications
+//		capabilities.setCapability("skipUnlock", true); //Needed if running on Android
 
 		driver = new IOSDriver<IOSElement>(url, capabilities);
 //		driver = new AndroidDriver<AndroidElement>(url, capabilities);
